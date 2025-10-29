@@ -1,0 +1,46 @@
+#root { 
+  height: 100%;
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+  background-color: rgb(240, 208, 246);
+}
+
+.anime-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 0;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.anime-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border-bottom: 1px solid #630184;
+  padding: 0.5rem 0;
+}
+
+.anime-title {
+  font-weight: bold;
+}
+
+.anime-episodes, .anime-score {
+  text-align: center;
+}
+
+.search-bar {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 420px;
+  font-size: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
