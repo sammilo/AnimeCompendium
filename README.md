@@ -2,7 +2,7 @@
 
 Submitted by: **Samantha Milo**
 
-This web app: **insert description**
+This web app: **Displays the top yearly anime, along with other interesting statistics and anime descriptions.**
 
 Time spent: **14 (Project 5) + 7 (Project 6)** hours spent in total
 
