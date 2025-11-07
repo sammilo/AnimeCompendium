@@ -3,23 +3,108 @@
   margin: 0 auto; 
   padding: 2rem; 
   text-align: center; 
-  background-color: rgb(240, 208, 246);
+  font-family: Tahoma, Verdana, sans-serif;
+
+  /* Background image style */
+  background-image: url('./assets/star_wallpaper.png');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+.detail-background {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./assets/star_wallpaper.png');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: top left;
+}
+
+.detail-content {
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 2rem 2rem 2rem;
+  background: rgba(30, 30, 60, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.detail-description {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.genre-list {
+  color: white;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.genre-list li {
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.detail-loading {
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: aliceblue;
+  text-shadow: 2px 2px 4px #8cc6f2;
+  margin-bottom: 0.1rem;
+  size: 150px;
+}
+
+h2 {
+  color: #f5ffb2;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #ffb05b;
+}
+
+/* Ensure header and list stack vertically */
+.anime-list-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
 }
 
 .anime-list {
   list-style: none;
   padding: 0;
-  margin: 1rem auto 0;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
   text-align: left;
 }
 
 .anime-row {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  border-bottom: 1px solid #630184;
-  padding: 0.5rem 0;
+  border-bottom: 1.5px solid #1b043b;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(240, 248, 255, 0.8); /* aliceblue with 80% opacity */
 }
 
 .anime-title {
@@ -36,11 +121,51 @@
   width: 100%;
   max-width: 420px;
   font-size: 1rem;
+  border-radius: 20px;
 }
 
 .filter-buttons {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
-  gap: 10px;
+  margin-top: 2rem;
+  gap: 25px;
+}
+
+.list-charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.anime-list {
+  flex: 1;
+  min-width: 300px;
+}
+
+.highest-rated-chart {
+  flex: 1;
+  min-width: 600px;
+}
+
+.genre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background: #f1f1f1;
+  color: #191919;
+  margin: 20px 30px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
 }
